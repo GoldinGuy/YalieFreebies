@@ -3,10 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const DealCard = ({deal }: { deal: Deal }) => {
     return (
-			<a
-				href={deal.url}
-				className={`rounded-2xl hover:shadow-lg h-fit`}
-			>
+			<a href={deal.url} className={`rounded-2xl hover:shadow-lg h-fit`}>
 				{/* hover:bg-gray-50 */}
 				<div className="px-6 ">
 					<div className="flex flex-row items-center">
@@ -15,7 +12,8 @@ const DealCard = ({deal }: { deal: Deal }) => {
 						>
 							<FontAwesomeIcon
 								icon={deal.icon.def}
-								size="2x"
+								width={35}
+								height={35}
 								className={`${deal.icon.color}`}
 							/>
 						</div>

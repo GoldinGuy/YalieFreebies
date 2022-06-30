@@ -1,22 +1,32 @@
 import Head from 'next/head'
 import { AppProps } from 'next/app'
 import '../styles/index.css'
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { fas } from "@fortawesome/free-solid-svg-icons";
-// import { faFontAwesome, faAmazon } from "@fortawesome/free-brands-svg-icons";
-
-// library.add(fas, faAmazon);
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Head>
-        <title>NextJS TailwindCSS TypeScript Starter</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  )
+		<>
+			<Head>
+				<title>Yalie Freebies</title>
+				<meta
+					name="description"
+					content="Take advantage of your newfound collegiate status and save some moolah moolah!"
+				></meta>
+				<link rel="shortcut icon" href="./favicon.ico" />
+				<meta property="og:title" content="Yalie Freebies" />
+				<meta
+					name="twitter:card"
+					content="Take advantage of your newfound collegiate status and save some moolah moolah!"
+				/>
+				<meta
+					property="og:description"
+					content="Take advantage of your newfound collegiate status and save some moolah moolah!"
+				/>
+				<meta property="og:image" content={"./TheShopsatYale.jpg"} />
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+			</Head>
+			<Component {...pageProps} />
+		</>
+	);
 }
 
 export default MyApp
