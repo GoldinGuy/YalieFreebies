@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { AppProps } from 'next/app'
 import '../styles/index.css'
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -23,7 +24,16 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<meta property="og:image" content={"./TheShopsatYale.jpg"} />
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+				{process.env.NEXT_PUBLIC_UMAMI_SCRIPT_URL &&
+					process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID && (
+						<Script
+							src={process.env.NEXT_PUBLIC_UMAMI_SCRIPT_URL}
+							data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+							strategy="lazyOnload"
+						/>
+					)}
 			</Head>
+
 			<Component {...pageProps} />
 		</>
 	);
