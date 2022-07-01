@@ -1,5 +1,5 @@
-import { faAmazon, faGithub, faLinux, faMicrosoft, faSpotify, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faBed, faBox, faCalendar, faCalendarAlt, faCloud, faCode, faCoffee, faContactCard, faDumbbell, faFilm, faFolder, faGift, faKeyboard, faLock, faMailBulk, faMusic, faNewspaper, faNoteSticky, faPaintRoller, faPen, faPenAlt, faPlane, faPlus, faPrint, faServer, faShield, faShieldAlt, faShoppingBag, faSitemap, faStopwatch, faTree, faTv, faTvAlt, faVideoCamera, faWrench, IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import { faAmazon, faGithub,  faMicrosoft, faSpotify, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faBed, faBox, faCalendarAlt, faCloud, faCode, faContactCard, faDumbbell, faFolder, faGift, faKeyboard, faMailBulk, faMusic, faNewspaper, faNoteSticky, faPaintRoller, faPen, faPenAlt, faPlane, faPrint, faServer, faShield, faShieldAlt, faShoppingBag, faStopwatch, faTree, faTv, faTvAlt, faVideoCamera, faWrench, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 export type Deal = {
 	name: string;
@@ -76,7 +76,7 @@ export const DEALS: Deal[] = [
 
 	{
 		name: "Zoom Pro",
-		discount: "FREE",
+		discount: "FREE w/ Yale SSO Login",
 		perks: [
 			"Unlimited meeting length",
 			"Yale Zoom Links",
@@ -87,7 +87,7 @@ export const DEALS: Deal[] = [
 			color: "text-blue-500",
 			bgColor: "bg-blue-100",
 		},
-		url: "https://www.spotify.com/us/student/",
+		url: "https://zoom.us/signin",
 	},
 	{
 		name: "Matlab",
