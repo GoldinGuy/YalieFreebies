@@ -24,7 +24,7 @@ const ContributeForm = () => {
 							data-attr="deal-submission-form"
 							placeholder="Free stuff"
 							maxLength={120}
-							value=""
+							// value=""
 						/>
 					</div>
 				</div>
