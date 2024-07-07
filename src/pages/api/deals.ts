@@ -1,5 +1,42 @@
-import { faAmazon, faGithub,  faMicrosoft, faSpotify, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faBed, faBox, faCalendarAlt, faCloud, faCode, faContactCard, faDumbbell, faFolder, faGift, faKeyboard, faMailBulk, faMusic, faNewspaper, faNoteSticky, faPaintRoller, faPen, faPenAlt, faPlane, faPrint, faServer, faShield, faShieldAlt, faShoppingBag, faStopwatch, faTree, faTv, faTvAlt, faVideoCamera, faWrench, IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import {
+	faAmazon,
+	faGithub,
+	faMicrosoft,
+	faSpotify,
+	faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+	faBed,
+	faBox,
+	faCalendarAlt,
+	faCloud,
+	faCode,
+	faContactCard,
+	faDumbbell,
+	faFolder,
+	faGift,
+	faKeyboard,
+	faMailBulk,
+	faMusic,
+	faNewspaper,
+	faNoteSticky,
+	faPaintRoller,
+	faPen,
+	faPenAlt,
+	faPlane,
+	faPrint,
+	faServer,
+	faShield,
+	faShieldAlt,
+	faShoppingBag,
+	faStopwatch,
+	faTree,
+	faTv,
+	faTvAlt,
+	faVideoCamera,
+	faWrench,
+	IconDefinition,
+} from "@fortawesome/free-solid-svg-icons";
 
 export type Deal = {
 	name: string;
@@ -13,7 +50,7 @@ export type DealIcon = {
 	def: IconDefinition;
 	color?: string;
 	bgColor?: string;
-}
+};
 
 export const DEALS: Deal[] = [
 	{
@@ -43,7 +80,7 @@ export const DEALS: Deal[] = [
 			color: "text-emerald-500",
 			bgColor: "bg-emerald-100",
 		},
-		url: "https://confluence.som.yale.edu/display/SC/Microsoft+Office+365+Windows",
+		url: "https://yale.service-now.com/it?id=service_offering&sys_id=2a5792451b3c7810ff45fd12dd4bcba9&table=u_service_offering_index",
 	},
 	{
 		name: "Amazon Prime Package",
@@ -72,6 +109,7 @@ export const DEALS: Deal[] = [
 			bgColor: "bg-purple-100",
 		},
 		url: "https://yale.service-now.com/it?id=support_article&sys_id=4f944213db625f48973777dbbf96192b",
+		// https://yale.service-now.com/it?id=service_offering&sys_id=8b99caacdb273a043514b1c0ef961925
 	},
 
 	{
@@ -87,7 +125,7 @@ export const DEALS: Deal[] = [
 			color: "text-blue-500",
 			bgColor: "bg-blue-100",
 		},
-		url: "https://zoom.us/signin",
+		url: "https://yale.service-now.com/it?id=support_article&sys_id=48382a781b738cd0897ddd77cc4bcb35",
 	},
 	{
 		name: "Matlab",
@@ -98,7 +136,7 @@ export const DEALS: Deal[] = [
 			color: "text-red-500",
 			bgColor: "bg-red-100",
 		},
-		url: "https://e5.onthehub.com/WebStore/OfferingDetails.aspx?o=04fb2c00-4b07-ec11-813e-000d3af41938&pmv=00000000-0000-0000-0000-000000000000&ws=ad730196-897d-dc11-ac48-0030485a6b08&vsro=8",
+		url: "https://e5.onthehub.com/WebStore/OfferingDetails.aspx?o=0ecb035c-c3fd-ee11-8163-000d3af41938&pmv=00000000-0000-0000-0000-000000000000&ws=ad730196-897d-dc11-ac48-0030485a6b08&vsro=8",
 	},
 	{
 		name: "New York Times",
@@ -144,6 +182,43 @@ export const DEALS: Deal[] = [
 			bgColor: "bg-amber-100",
 		},
 		url: "https://web.library.yale.edu/access-wall-street-journal",
+	},
+	{
+		name: "The Atlantic",
+		discount: "FREE",
+		perks: [
+			"Unlimited articles/podcasts/videos",
+			"Audio articles",
+			"Daily puzzles",
+		],
+		icon: {
+			def: faNewspaper,
+			color: "text-red-500",
+			bgColor: "bg-red-100",
+		},
+		url: "https://library.yale.edu/eresources/access/access-the-atlantic",
+	},
+	{
+		name: "The Financial Times",
+		discount: "FREE",
+		perks: ["Unlimited articles", "Audio articles", "Unlimited journals"],
+		icon: {
+			def: faNewspaper,
+			color: "text-purple-500",
+			bgColor: "bg-purple-100",
+		},
+		url: "https://ask.library.yale.edu/faq/175200",
+	},
+	{
+		name: "Shops @ Yale Discounts",
+		discount: "10-20% Off w/ ID",
+		perks: ["Donut Crazy", "Tropical Smoothie", "& many more!"],
+		icon: {
+			def: faShoppingBag,
+			color: "text-gray-500",
+			bgColor: "bg-gray-100",
+		},
+		url: "https://theshopsatyale.com/studentdiscounts/",
 	},
 	{
 		name: "Spotify Premium",
@@ -222,8 +297,24 @@ export const DEALS: Deal[] = [
 			color: "text-blue-500",
 			bgColor: "bg-blue-100",
 		},
-		url: "https://craftdocs.typeform.com/to/Ac3dD6bi?typeform-source=support.craft.do",
+		url: "https://docs.google.com/forms/d/e/1FAIpQLSfXyRwklgz0CvXYsiRD7SQGRCHh248kJ0FLl3R9p6Br7EeC2w/viewform",
 	},
+	{
+		name: "Evernote Pro",
+		discount: "40% off",
+		perks: [
+			"50 GB Storage",
+			"Advanced exporting",
+			"Collaborate with 5 friends",
+		],
+		icon: {
+			def: faPen,
+			color: "text-green-500",
+			bgColor: "bg-green-100",
+		},
+		url: "https://evernote.com/unidays",
+	},
+
 	{
 		name: "ResumeGo",
 		discount: "30% off w/ YALECOUP",
@@ -235,17 +326,7 @@ export const DEALS: Deal[] = [
 		},
 		url: "https://www.resumego.net",
 	},
-	{
-		name: "Resumates",
-		discount: "30% off w/ STUDENT30",
-		perks: ["Print your resume in color", "25 premium copies of resume"],
-		icon: {
-			def: faContactCard,
-			color: "text-pink-500",
-			bgColor: "bg-pink-100",
-		},
-		url: "https://resumates.co",
-	},
+
 	{
 		name: "Cheap Airport Parking",
 		discount: "20% off w/ YALECAP",
