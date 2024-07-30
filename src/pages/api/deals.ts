@@ -339,6 +339,51 @@ export const DEALS: Deal[] = [
 		url: "https://www.cheapairportparking.org",
 	},
 	{
+		name: "Yale VPN",
+		discount: "FREE",
+		perks: [
+			"Access Yale sites when away",
+			"Block targeted ads/malware",
+			"Hide location",
+		],
+		icon: {
+			def: faShield,
+			color: "text-blue-500",
+			bgColor: "bg-blue-100",
+		},
+		url: "https://studenttechnology.yale.edu/new-students/set-virtual-private-network-vpn",
+	},
+	{
+		name: "Nord VPN (1 YR)",
+		discount: "$47.99 – Save $51.49 (52% off)",
+		perks: [
+			"Protect unlimited devices",
+			"Hide location",
+			"Block targeted ads/malware",
+		],
+		icon: {
+			def: faShield,
+			color: "text-blue-500",
+			bgColor: "bg-blue-100",
+		},
+		url: "https://yale.onthehub.com/WebStore/OfferingDetails.aspx?o=2742d139-16cc-ea11-812d-000d3af41938&pmv=00000000-0000-0000-0000-000000000000",
+	},
+	{
+		name: "Nord VPN w/ Password Manager",
+		discount: "$62.99 – Save $63.97 (50%)",
+		perks: [
+			"Protect unlimited devices",
+			"Protect passwords",
+			"Search passwords",
+		],
+		icon: {
+			def: faShield,
+			color: "text-blue-500",
+			bgColor: "bg-blue-100",
+		},
+		url: "https://yale.onthehub.com/WebStore/OfferingDetails.aspx?o=b94cd4e4-79b1-ee11-8160-000d3af41938&pmv=00000000-0000-0000-0000-000000000000",
+	},
+	{
 		name: "SurfShark VPN",
 		discount: "FREE 3m ➡ $2.21/m (83% off)",
 		perks: [
